@@ -5,6 +5,16 @@
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
+
+.pippo{
+  width: 498px!important;
+  margin: 30px 0 0 30px;
+  text-align: right;
+  letter-spacing: 0px;
+  opacity: 1;
+  border: 1px solid red;
+}
+
 .logo{
   width: 120px!important;
   margin: 30px 0 0 30px;
@@ -452,4 +462,8 @@ input[type="checkbox"]:checked::before {
     color: #707070;
     opacity: 1;
   }
+}
+
+.pippo{
+  border: 1px solid red;
 }
