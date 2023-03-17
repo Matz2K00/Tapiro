@@ -1,6 +1,6 @@
 function validateRegister() {
 
-  let res   = document.getElementById('res');
+  let res   = document.getElementById('resR');
   let nome  = document.forms["signupForm"]["firstname"].value;
   let cogno = document.forms["signupForm"]["lastname"].value;
   let email = document.forms["signupForm"]["email"].value;
@@ -24,7 +24,7 @@ function validateRegister() {
     res.setAttribute("class", "erro");
     res.innerText = "Campi registrazione errati!";
     document.forms["signupForm"].reset();
-    setTimeout(function(){ document.getElementById('res').removeAttribute("class") }, 5000);
+    setTimeout(function(){ document.getElementById('resR').removeAttribute("class") }, 5000);
     return false;
   }
   /*+++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -33,7 +33,7 @@ function validateRegister() {
   if (passw != confi) {
     res.setAttribute("class", "erro");
     res.innerText = "Password non uguali!";
-    setTimeout(function(){ document.getElementById('res').removeAttribute("class") }, 5000);
+    setTimeout(function(){ document.getElementById('resR').removeAttribute("class") }, 5000);
     return false;
   }
   /*+++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -43,7 +43,7 @@ function validateRegister() {
   if (!filter.test(nome) || !filter.test(cogno)) {
     res.setAttribute("class", "erro");
     res.innerText = "Nome/Cognome non validi!";
-    setTimeout(function(){ document.getElementById('res').removeAttribute("class") }, 5000);
+    setTimeout(function(){ document.getElementById('resR').removeAttribute("class") }, 5000);
     return false;
   }
   /*+++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -53,7 +53,7 @@ function validateRegister() {
   if (!filter.test(email)) {
     res.setAttribute("class", "erro");
     res.innerText = "Email non valida!";
-    setTimeout(function(){ document.getElementById('res').removeAttribute("class") }, 5000);
+    setTimeout(function(){ document.getElementById('resR').removeAttribute("class") }, 5000);
     return false;
   }
   /*+++++++++++++++++++++++++++++++++++++++++++++++*/

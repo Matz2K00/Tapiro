@@ -170,6 +170,11 @@ input[type="checkbox"]:checked::before {
   cursor: pointer;
   margin-top: 30px;
 }
+#footerLogin .button:hover {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  color: #1F97FF;
+  border: 1px solid #1F97FF;
+}
 #footerLogin .reg{
   width: 170px;
 }
