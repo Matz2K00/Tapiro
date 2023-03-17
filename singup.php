@@ -17,7 +17,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div> 
 	<img loading="lazy" draggable="false" onclick="window.location.href='index.php'" src="img/logo_login.svg" class="logo">
+		<div class="pippo"> 
+			<p> Hai già un account? <a href="login.php" id="aRegister">ACCEDI</a></p>
+		</div>
+	</div>
 	<div class="box-form">
 	    <a href="#register" id="aSignup" >SIGN-UP</a>
 

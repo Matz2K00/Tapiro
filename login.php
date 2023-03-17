@@ -9,7 +9,6 @@
   <?php session_start(); require 'secure/notForLog.php'; ?>
   <link rel="stylesheet" type="text/css" href="css/form.css">
   <script src="js/validateLogin.js"></script>
-  <script src="js/validateRegister.js"></script>
   <script src="js/validateEmail.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +16,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div> 
 	<img loading="lazy" draggable="false" onclick="window.location.href='index.php'" src="img/logo_login.svg" class="logo">
-	  
+		<div class="pippo">
+			<p> Non hai un account? <a href="singup.php" id="aRegister">REGISTRATI</a></p>
+		</div>
+	</div>
 	<div class="box-form">
 		<a href="#login" id="aLogin" class="active">LOG-IN</a>
 	  <!--/#login.form-action-->
