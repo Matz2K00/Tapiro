@@ -1,6 +1,6 @@
 <?php
 $hostData = "localhost";
-$userData = "alealila";
+$userData = "root";
 $paswData = "";
-$database = "my_alealila";
+$database = "test";
 ?>

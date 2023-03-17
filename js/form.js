@@ -1,19 +1,3 @@
-function formLogin() {
-  document.getElementById("aLogin").className = "active";
-  document.getElementById("aSignup").className = "";
-  document.getElementById("login").classList.remove("hide");
-  document.getElementById("login").classList.add("show");
-  document.getElementById("register").classList.remove("show");
-  document.getElementById("register").classList.add("hide");
-}
-function formSignup() {
-  document.getElementById("aSignup").className = "active";
-  document.getElementById("aLogin").className = "";
-  document.getElementById("register").classList.remove("hide");
-  document.getElementById("register").classList.add("show");
-  document.getElementById("login").classList.remove("show");
-  document.getElementById("login").classList.add("hide");
-}
 function showPaswL() {
   if(document.getElementById("showPaswL").innerText == "Mostra"){
     document.getElementById("pasw").setAttribute("type", "text");

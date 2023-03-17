@@ -20,23 +20,9 @@
 	<img loading="lazy" draggable="false" onclick="window.location.href='index.php'" src="img/logo_login.svg" class="logo">
 	  
 	<div class="box-form">
-
-		<!--form-container-->
-	  <ul class="tabs">
-	    <li onclick="formLogin(this)">
-	      <a href="#login" id="aLogin" class="active">LOG-IN</a>
-	    </li>
-	    <li onclick="formSignup()">
-	      <a href="#register" id="aSignup" >SIGN-UP</a>
-	    </li>
-	  </ul>
-
-
+		<a href="#login" id="aLogin" class="active">LOG-IN</a>
 	  <!--/#login.form-action-->
-
-
 	  <div id="login" class="form-action show">
-	    
 	    <form name="loginForm" id="loginForm" onsubmit="return validateLogin()" action="mod_login.php" method="post">
 				<span <?php if(isset($_SESSION['erroL']) && ($_SESSION['erroL'] == "Registrazione effettuata!" || $_SESSION['erroL'] == "Email per recupero password inviata!" || $_SESSION['erroL'] == "Password resettata!")){
 		          			echo "class='succ'";
@@ -49,9 +35,9 @@
 		     	unset($_SESSION['erroL']);
 		    ?>
 		    <br>
-		    <input type="email" name="email" placeholder="Inserisci la tua email" required>
+		    <input type="email" name="email" placeholder="Inserisci la tua email*" required>
 		    <br>
-		    <input type="password" id="pasw" name="pass" placeholder="Inserisci la password" required><div id="showPaswL" class="mostra" onclick="showPaswL()">Mostra</div>
+		    <input type="password" id="pasw" name="pass" placeholder="Inserisci la password*" required><div id="showPaswL" class="mostra" onclick="showPaswL()">Mostra</div>
 		    <br>
 				<div id="footerLogin">
 					<input type="checkbox" id="savePasw" name="savePasw" value="savePassword"> <label for="savePasw"> Ricordami</label>
@@ -83,43 +69,6 @@
 					    </div>
 					</div>
 					<!-- ----------------------------------- -->
-	  </div>
-
-
-	  <!--/#register.form-action-->
-
-
-	  <div id="register" class="form-action hide">
-	    
-	    <form name="signupForm" id="signupForm" onsubmit="return validateRegister()" action="mod_signup.php" method="post">
-				<span <?php if(isset($_SESSION['erroR'])){
-		          			echo "class='erro'";
-		          		}
-		          	?> id="resR"><?php if(isset($_SESSION['erroR'])){ echo $_SESSION['erroR']; } ?></span>
-		    <?php 
-		    	if(isset($_SESSION['erroR'])){ echo "<script>setTimeout(function(){ document.getElementById('resR').removeAttribute('class') }, 5000);</script>"; }
-		     	unset($_SESSION['erroR']);
-		    ?>
-		    <br>
-		    <input type="text" name="firstname" placeholder="Nome" required>
-		    <br>
-		    <input type="text" name="lastname" placeholder="Cognome" required>
-		    <br>
-		    <input type="email" name="email" placeholder="Inserisci la tua email" required>
-		    <br>
-		    <input type="password" id="paswR" name="pass" placeholder="Inserisci la password" required><div id="showPaswR" class="mostra" onclick="showPaswR()">Mostra</div>
-		    <br>
-		    <input type="password" id="conf" name="confirm" placeholder="Conferma la password" required><div id="showConfR" class="mostra" onclick="showConfR()">Mostra</div>
-		    <br>
-				<div id="footerLogin">
-					<input type="checkbox" id="robot" name="robot" required> <label for="robot"> Non sono un robot</label>
-					<br><br>
-					<input type="checkbox" id="dati" name="dati" required> <label for="dati"> Autorizzo il trattamento dei dati</label>
-					<br>
-					<input type="submit" name="submit" value="REGISTRATI" class="button reg" rel="noopener noreferrer">
-				</div>
-				
-			</form>
 	  </div>
 	</div>
 
