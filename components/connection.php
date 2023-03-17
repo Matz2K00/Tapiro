@@ -2,5 +2,5 @@
 $hostData = "localhost";
 $userData = "alealila";
 $paswData = "";
-$database = "my_alealila"
+$database = "my_alealila";
 ?>
