@@ -5,27 +5,51 @@
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
-
-.pippo{
-  width: 498px!important;
-  margin: 30px 0 0 30px;
+.logo{
+  width: 120px!important;
+  margin: 50px 0 0 57px;
+  cursor: pointer;
+}
+.linkTo{
+  position: absolute;
+  /* Layout Properties */
+  top: 50px;
+  right: 57px;
+  height: 32px;
+  /* UI Properties */
   text-align: right;
   letter-spacing: 0px;
   opacity: 1;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
-.logo{
-  width: 120px!important;
-  margin: 30px 0 0 30px;
-  cursor: pointer;
+.linkTo p{
+  font: normal normal 500 19px/32px Montserrat;
+  letter-spacing: 0px;
+  color: #777777;
 }
+
+.linkTo a:link, .linkTo a:visited{
+  text-decoration: none;
+  font: italic normal 400 19px/32px Montserrat;
+  letter-spacing: 0px;
+  color: #1F97FF;
+}
+
+.linkTo a:hover{
+  text-decoration: underline;
+}
+
+.linkTo a:active{
+  font: normal normal bold 19px/32px Montserrat;
+}
+
 .box-form {
   background: #FFFFFF;
   color: #000;
   margin: auto;
-  margin-top: 100px;
-  width: 50%;
+  margin-top: 58px;
+  width: 585px;
   text-align: center;
   margin-bottom: 100px;
 }
@@ -33,7 +57,7 @@
   background: #FFFFFF;
   height: 40px;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 24px;
   padding: 0;
   list-style-type: none;
   display: inline-block;
@@ -43,25 +67,25 @@
   display: block;
   margin: 0;
   padding: 0;
-  float: left;
+  float: center; 
 }
 .box-form .tabs li a {
   background: #FFFFFF;
   border-radius: 20px 20px 0 0;
   /* UI Properties */
-  font: normal normal 600 30px Montserrat;
+  text-align: center;
+  font: normal normal bold 32px/47px Montserrat;
   letter-spacing: 0px;
   color: #777777;
   opacity: 0.6;
   text-decoration: none;
   float: left;
-  padding: 12px 22px;
+  padding: 20px 80px 0 80px;
 }
 .box-form .tabs li a.active {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: inset 0px 3px 6px #00000029;
-  border-radius: 20px 20px 0 0;
-  /*text-decoration-line: underline;*/
+  border-radius: 50px 50px 0 0;
   color: #1F97FF;
   opacity: 1;
 }
@@ -79,37 +103,44 @@
   text-decoration: underline;
 }
 .box-form form input[type=email], .box-form form input[type=password], .box-form form input[type=text] {
-  width: 360px;
-  height: 40px;
-  margin-bottom: 20px;
+  width: 423px;
+  height: 50px;
+  margin-bottom: 23px;
   background: #F4F4F4 0% 0% no-repeat padding-box;
   border-radius: 33px;
   border: none;
   outline: none;
   text-indent: 20px;
+  font: italic normal normal 18px/29px Montserrat;
   color: #000;
 }
-.box-form form input[type=password]{
-  width: 280px;
+.box-form form .pasw{
+  width: 343px!important;
   padding-right: 80px;
 }
 
-.mostra{
+.mostra, .mostra:visited{
   display: inline-block;
   position: absolute;
   width: fit-content;
   color: #1F97FF;
-  text-decoration: underline;
-  font: normal normal bold 14px/15px Montserrat;
+  text-decoration: none;
+  font: italic normal 400 14px/25px Montserrat;
   z-index: 10;
   margin-top: 11px;
   margin-left: -75px;
   cursor: pointer;
 }
+.mostra:hover{
+  text-decoration: underline;
+}
+.mostra:active{
+  font: normal normal 600 14px/25px Montserrat;
+}
 #footerLogin{
   margin: auto;
-  width: 280px;
-  margin-top: 10px;
+  width: 423px;
+  margin-top: 2px;
 }
 #footerLogin input[type=checkbox], #footerLogin label{
   float: left;
@@ -118,6 +149,7 @@
   float: right;
 }
 #footerLogin input[type="checkbox"] {
+  margin-left: 20px!important;
   appearance: none;
   background-color: #fff;
   margin: 0;
@@ -128,7 +160,6 @@
   border: 0.15em solid #1F97FF;
   border-radius: 6px;
   transform: translateY(-0.075em);
-
   display: grid;
   place-content: center;
 }
@@ -148,44 +179,52 @@ input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 #footerLogin label{
-  color: #707070CC;
-  font-family: 'Montserrat', sans-serif;
-  font-style: italic;
-  font-weight: 0;
-  font-size: 15px;
+  color: #707070;
+  font: normal normal normal 14px/16px Montserrat;
   padding-left: 5px;
 }
 .dimenticata{
+  display: block;
+  margin-top: 44px!important;
   font: italic normal 400 12px/16px Montserrat;
   letter-spacing: 0px;
   color: #1F97FF!important;
   opacity: 1;
   cursor: pointer;
 }
+
 #footerLogin .button {
-  float: none;
-  margin: auto;
-  width: 150px;
-  height: 45px;
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
   background: #1F97FF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 10px #00000029;
   border-radius: 37px;
   border: none;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
+  font: normal normal bold 21px/34px Montserrat;
   letter-spacing: 0.84px;
   color: #FFFFFF;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 38px;
+  min-width: 185px!important;
+  min-height: 55px!important;
 }
-#footerLogin .reg{
-  width: 170px;
+#footerLogin .button:hover{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 10px #00000029;
+  border: 6px solid #FFFFFF;
+  color: #1F97FF;
+}
+#footerLogin .button:active{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 10px #00000029;
+  border: 6px solid #1F97FF;
+  color: #1F97FF;
 }
 .box-form form input::-webkit-input-placeholder {
   text-align: left;
-  font: italic normal 400 17px Montserrat;
+  font: italic normal 400 18px Montserrat;
   letter-spacing: 0px;
   color: #707070;
   opacity: 1;
