@@ -22,11 +22,15 @@
 	<div class="box-form">
 
 	    <ul class="tabs">
-	    <li>
-	      <a class="active">LOG-IN</a>
-	    </li>
-	  </ul>
+			<li>
+				<a class="active">LOG-IN</a>
+				
+			</li>
+			<hr id="hr_log">
+	  	</ul>
+
 	  <div id="login" class="form-action show">
+		
 	    <form name="loginForm" id="loginForm" onsubmit="return validateLogin()" action="mod_login.php" method="post">
 				<span <?php if(isset($_SESSION['erroL']) && ($_SESSION['erroL'] == "Registrazione effettuata!" || $_SESSION['erroL'] == "Email per recupero password inviata!" || $_SESSION['erroL'] == "Password resettata!")){
 		          			echo "class='succ'";
@@ -41,9 +45,11 @@
 		    <br>
 		    <input type="email" name="email" placeholder="Inserisci la tua email*" required>
 		    <br>
-		    <input type="password" id="pasw" name="pass" placeholder="Inserisci la password*" class="pasw" required><div id="showPaswL" class="mostra" onclick="showPaswL()">Mostra</div>
+		    <input type="password" id="pasw" name="pass" placeholder="Inserisci la password*" class="pasw" required><div id="showPaswL" class="mostra" onclick="showPasw('showPaswL', 'pasw')">Mostra</div>
 		    <br>
 				<div id="footerLogin">
+					<p class="obbligatorio">*Campo obbligatorio</p>
+					<br>
 					<input type="checkbox" id="savePasw" name="savePasw" value="savePassword"> <label for="savePasw"> Ricorda la mia password</label>
 					<br>
 					<input type="submit" name="submit" value="ACCEDI" class="button" rel="noopener noreferrer">

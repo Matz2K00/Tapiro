@@ -25,6 +25,7 @@
 	    <li>
 	      <a class="active">SIGN-UP</a>
 	    </li>
+		<hr id="hr_sing">
 	  </ul>
 
 	<div id="register" class="form-action show">
@@ -45,11 +46,13 @@
 		    <br>
 		    <input type="email" name="email" placeholder="Email*" required>
 		    <br>
-		    <input type="password" id="paswR" name="pass" placeholder="Password*" class="pasw" required><div id="showPaswR" class="mostra" onclick="showPaswR()">Mostra</div>
+		    <input type="password" id="paswR" name="pass" placeholder="Password*" class="pasw" required><div id="showPaswR" class="mostra" onclick="showPasw('showPaswR', 'paswR')">Mostra</div>
 		    <br>
-		    <input type="password" id="conf" name="confirm" placeholder="Conferma la password*" class="pasw" required><div id="showConfR" class="mostra" onclick="showConfR()">Mostra</div>
+		    <input type="password" id="conf" name="confirm" placeholder="Conferma la password*" class="pasw" required><div id="showConfR" class="mostra" onclick="showPasw('showConfR', 'conf')">Mostra</div>
 		    <br>
 				<div id="footerLogin">
+					<label>*Campo obbligatorio</label>
+					<br>
 					<input type="checkbox" id="robot" name="robot" required> <label for="robot"> Non sono un robot</label>
 					<br><br>
 					<input type="checkbox" id="dati" name="dati" required> <label for="dati"> Autorizzo al trattamento dei miei dati</label>
