@@ -43,9 +43,9 @@
 		     	unset($_SESSION['erroL']);
 		    ?>
 		    <br>
-		    <input type="email" name="email" placeholder="Inserisci la tua email*" required>
+		    <input type="email" name="email" placeholder="Email*" required>
 		    <br>
-		    <input type="password" id="pasw" name="pass" placeholder="Inserisci la password*" class="pasw" required><div id="showPaswL" class="mostra" onclick="showPasw('showPaswL', 'pasw')">Mostra</div>
+		    <input type="password" id="pasw" name="pass" placeholder="Password*" class="pasw" required><div id="showPaswL" class="mostra" onclick="showPasw('showPaswL', 'pasw')">Mostra</div>
 		    <br>
 				<div id="footerLogin">
 					<p class="obbligatorio">*Campo obbligatorio</p>

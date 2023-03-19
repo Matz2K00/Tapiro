@@ -137,6 +137,9 @@ a:hover {
   font: italic normal normal 18px/29px Montserrat;
   color: #000;
 }
+.box-form form input[type=password]{
+  margin-bottom: 17px;
+}
 .box-form form .pasw{
   width: 343px!important;
   padding-right: 80px;
@@ -204,8 +207,10 @@ input[type="checkbox"]:checked::before {
 .obbligatorio{
   display: flex;
   color: #707070;
-  font: normal normal normal 14px/16px Montserrat;
+  font: normal normal normal 12px/16px Montserrat;
   padding-left: 20px;
+  opacity:0.8
+
 }
 #footerLogin label{
   color: #707070;
@@ -235,7 +240,7 @@ input[type="checkbox"]:checked::before {
   letter-spacing: 0.84px;
   color: #FFFFFF;
   cursor: pointer;
-  margin-top: 38px;
+  margin-top: 41px;
   min-width: 185px!important;
   min-height: 55px!important;
 }
